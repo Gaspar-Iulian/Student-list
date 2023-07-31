@@ -1,0 +1,193 @@
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(201, 215, 42) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+/* Stilul pentru body */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #cfdc5ea0, #c6d084, #555045);
+  animation: bgAnimation 5s ease infinite alternate;
+  font-family: Arial, sans-serif;
+}
+
+/* Animatie pentru fundal */
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Stilul pentru header */
+header {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Stilul pentru h1 */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Stilul pentru nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+/* Stilul pentru nav ul */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Stilul pentru nav li */
+nav li {
+  margin: 0 1rem;
+}
+
+/* Stilul pentru nav a */
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+/* Stilul pentru nav a:hover */
+nav a:hover {
+  background: #555;
+  color: #fff;
+}
+
+/* Stilul pentru main */
+main {
+  margin-top: 6rem;
+}
+
+/* Stilul pentru section */
+section {
+  padding: 2rem;
+}
+
+/* Stilul pentru h2 */
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Stilul pentru p */
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Stilul pentru .galerie */
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Stilul pentru .galerie img */
+.galerie img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilul pentru footer */
+footer {
+  background: #fff;
+  box-shadow: 0 

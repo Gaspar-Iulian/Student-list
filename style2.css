@@ -1,0 +1,82 @@
+/* setam fundalul pentru intreaga pagina */
+body {
+  background-color: #F5F5DC; /* culoarea crem */
+  background-image: url("https://i.imgur.com/QLsg1tr.png"); /* imaginea de fundal */
+  background-repeat: no-repeat; /* nu repetam imaginea */
+  background-position: center; /* pozitionarea centrata */
+}
+
+/* stilizam antetul */
+header {
+  background-color: #FFFFFF; /* fundal alb */
+  padding: 20px; /* adaugam spatiu la margini */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* umbra usoara */
+}
+
+h1 {
+  margin: 0; /* nu avem margini in jurul titlului */
+  font-size: 36px; /* dimensiunea fontului */
+}
+
+nav ul {
+  list-style-type: none; /* scoatem bullet-urile */
+  margin: 0; /* eliminam marginile */
+  padding: 0; /* eliminam padding-ul */
+  display: flex; /* flexbox pentru aliniere */
+  justify-content: space-evenly; /* spatii egale intre elemente */
+}
+
+nav ul li {
+  display: inline-block; /* afisam meniul orizontal */
+}
+
+nav ul li a {
+  display: block; /* facem link-ul un element bloc */
+  color: #333333; /* culoarea textului */
+  text-decoration: none; /* eliminam sublinierea */
+  font-size: 18px; /* dimensiunea fontului */
+  padding: 10px; /* adaugam spatiu la margini */
+  border-radius: 5px; /* margini rotunjite */
+  transition: all 0.2s ease-in-out; /* tranzitie linia easing */
+}
+
+nav ul li a:hover {
+  background-color: #333333; /* culoarea de fundal la hover */
+  color: #FFFFFF; /* culoarea textului la hover */
+}
+
+/* stilizam sectiunile */
+section {
+  padding: 40px; /* adaugam spatiu la margini */
+}
+
+h2 {
+  margin-top: 0; /* eliminam marginile de sus */
+}
+
+ul {
+  list-style-type: none; /* scoatem bullet-urile */
+  padding: 0; /* eliminam padding-ul */
+}
+
+li {
+  font-size: 18px; /* dimensiunea fontului */
+  margin-bottom: 10px; /* adaugam spatiu la margini */
+}
+
+/* stilizam casetele de text */
+.text-box {
+  background-color: #FFFFFF; /* fundal alb */
+  padding: 20px; /* adaugam spatiu la margini */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* umbra usoara */
+  border-radius: 5px; /* margini rotunjite */
+  margin-bottom: 20px; /* adaugam spatiu la margini */
+}
+
+.text-box h3 {
+  margin-top: 0; /* eliminam marginile de sus */
+}
+
+.text-box p {
+  margin-top: 0; /* eliminam marginile de sus */
+  font-size: 18px; /*
